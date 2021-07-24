@@ -1,0 +1,38 @@
+@import "../../../../../styles/index.scss";
+
+
+$iconMarginHorizontal: 12px;
+.background {
+  margin-bottom: 50px;
+  :global(.MuiCard-root)  {
+    height: 450px;
+    width: 350px;
+  }
+  .image  {
+    height: 250px;
+    width: 350px;
+    padding: 0 15px 0 15px;
+    object-fit: cover;
+  }
+  :global(.MuiCardContent-root) {
+    height: 130px;
+  }
+  :global(.MuiTypography-h6)  {
+    font-size: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  :global(.MuiTypography-body2) {
+  }
+  .count  {
+    font-size: 23px;
+    font-weight: 500;
+  }
+  .addIcon  {
+    margin-right: $iconMarginHorizontal;
+  }
+  .removeIcon  {
+    margin-left: $iconMarginHorizontal;
+  }
+}

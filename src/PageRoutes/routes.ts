@@ -1,4 +1,4 @@
-import { Home, Orders } from "../components/pages";
+import { Home, Checkout,Feedback } from "../components/pages";
 import { RouteI } from "../interfaces";
 enum routePaths {
   Home = "/",
@@ -12,12 +12,12 @@ const routes: Array<RouteI> = [
     component: Home,
   },
   {
-    path: routePaths.Feedback,
-    component: Home,
+    path: routePaths.Checkout,
+    component: Checkout,
   },
   {
-    path: routePaths.Checkout,
-    component: Orders,
+    path: routePaths.Feedback,
+    component: Feedback,
   },
 ];
 

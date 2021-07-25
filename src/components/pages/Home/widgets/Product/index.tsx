@@ -23,8 +23,9 @@ const Product = ({id,
         <CardActionArea>
           <img className={styles.image} src={image} alt={title}  />
           <CardContent>
-            <Typography gutterBottom variant="h6" component="h6">
-              {title}
+            <Typography variant="h6" component="h6">
+              <div>{title}</div>
+              <div className={styles.price}>₹ {price}</div>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
               {description.length>descriptionLength?`${description.substring(0,descriptionLength)}....`:description}

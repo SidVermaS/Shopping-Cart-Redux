@@ -7,11 +7,16 @@ import Product from './widgets/Product'
 import styles from './index.module.scss'
 const Home = (props: any) => {
   const [products,setProducts]=useState<Array<Array<ProductI>>>([])
+  
   useEffect(() => {
-    props.fetch('?limit=32')
+    console.log('~~~ len: ',props.products.length)
+    if(props.products.length===0) {
+      props.fetch('')
+    }
     // eslint-disable-next-line
   }, [])
   useEffect(()=>  {
+    console.log('~~~ prod: ',props.products)
     if(props.products?.length>0)  {  
       setRowsAndColumns([...props.products])
     }   

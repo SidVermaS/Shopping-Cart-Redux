@@ -1,4 +1,5 @@
 import Home from "./Home";
-import Orders from "./Orders";
+import Checkout from "./Checkout";
+import Feedback from "./Feedback";
 import NotFound from "./NotFound";
-export { Home, Orders, NotFound };
+export { Home, Checkout, Feedback, NotFound };

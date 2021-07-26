@@ -1,5 +1,5 @@
 {
-  "name": "employee-login-redux",
+  "name": "shopping-cart-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,6 +20,7 @@
     "axios": "^0.21.1",
     "bootstrap": "^5.0.2",
     "chart.js": "^3.4.1",
+    "firebase": "^8.8.0",
     "formik": "^2.2.9",
     "history": "^5.0.0",
     "jwt-decode": "^3.1.2",

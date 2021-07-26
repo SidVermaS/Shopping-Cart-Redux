@@ -1,4 +1,4 @@
-const baseURL = "http://fakestoreapi.com";
+const baseURL = "https://fakestoreapi.com";
 
 const products = "/products";
 
